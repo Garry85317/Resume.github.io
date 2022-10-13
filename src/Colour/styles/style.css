@@ -1,0 +1,138 @@
+.colourGenerate {
+  background-color: #eee;
+  min-height: 100vh;
+}
+.colourGenerate .container {
+  padding: 4rem 2rem;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+.colourGenerate .container h1 {
+  color: #3f515b;
+  font-size: 2.5rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+.colourGenerate .container p {
+  color: #aaa;
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+}
+.colourGenerate .container p .generator-button {
+  color: #b67278;
+  font-weight: 600;
+  font-size: inherit;
+  transition: 0.4s ease-out;
+}
+.colourGenerate .container p :hover {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+.colourGenerate .container h4 {
+  color: #aaa;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+.colourGenerate .container .colours {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 1rem;
+}
+.colourGenerate .container .colours .colour {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  color: #fff;
+  background-color: #1e2f42;
+  transition: 0.5s ease-out;
+  border: 2px solid transparent;
+  height: 8vh;
+}
+.colourGenerate .container .colours .colour input {
+  text-align: center;
+}
+.colourGenerate .container .colours .lock-toggle {
+  width: 1rem;
+  opacity: 0.5;
+  transition: 0.4s;
+}
+.colourGenerate .container .colours .lock-toggle.is-locked {
+  opacity: 1;
+}
+@media (min-width: 768px) {
+  .colourGenerate .container .colours {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .colourGenerate .container .colours .colour {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 25vh;
+  }
+  .colourGenerate .container .colours .colour input {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+}
+@media (min-width: 1024px) {
+  .colourGenerate .container .colours {
+    grid-template-columns: repeat(6, 1fr);
+  }
+  .colourGenerate .container .colours .colour {
+    height: 60vh;
+  }
+}
+
+.colour.copied {
+  border: 2px solid #b67278;
+}
+
+button,
+input {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: none;
+  outline: none;
+  background: none;
+  color: inherit;
+}
+
+button {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  cursor: pointer;
+}
+
+.alert-Container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.alert-Container .alert {
+  background-color: antiquewhite;
+  width: 20rem;
+  height: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3rem;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+.alert-Container .alert .msg {
+  padding-right: 0.5rem;
+}/*# sourceMappingURL=style.css.map */

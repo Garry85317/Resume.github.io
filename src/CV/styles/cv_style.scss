@@ -1,0 +1,24 @@
+.myCV {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Noto Sans TC", sans-serif, "Oswald";
+  font-family: "Roboto Mono", monospace;
+}
+
+@mixin pad {
+  @media (max-width: 820px) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media (max-width: 500px) {
+    @content;
+  }
+}
+
+@import "./greet";
+@import "./about";
+@import "./skills";
+@import "./project";

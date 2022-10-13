@@ -1,0 +1,447 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC&family=Poppins&family=Roboto+Condensed&family=The+Nautigal:wght@700&display=swap");
+.footer_container {
+  display: flex;
+  height: 3rem;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  background-color: #bb5a3a;
+  color: antiquewhite;
+}
+
+/* ---------------- Navbar and burger menu ------------------ */
+.Navbar {
+  /* ------------- sliding menu ------------------ */
+}
+.Navbar .menu {
+  display: flex;
+  background-color: #000;
+  position: fixed;
+  z-index: 51;
+  align-items: center;
+  justify-content: space-around;
+  transition: width 0.4s, height 0.4s, transform 0.4s;
+  transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
+}
+.Navbar .menu .logo {
+  margin: 0 10em;
+  opacity: 0;
+  display: none;
+}
+.Navbar .menu .logo h1 {
+  color: #ffffff;
+}
+.Navbar .menu .nav_grid {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 2.5rem;
+  opacity: 0;
+}
+.Navbar .menu .nav_grid .list {
+  display: none;
+  align-items: center;
+  cursor: pointer;
+}
+.Navbar .menu .nav_grid .list .text {
+  display: grid;
+  color: #ffffff;
+  align-items: center;
+  font-size: 1.2rem;
+  font-weight: 700;
+  width: 100px;
+  height: 40px;
+  justify-content: center;
+}
+.Navbar .menu .nav_grid .list .nav_project {
+  position: relative;
+  display: block;
+}
+.Navbar .menu .nav_grid .list .nav_project .nav_list {
+  height: 150px;
+  position: absolute;
+  overflow: auto;
+  width: 100px;
+  padding-top: 5px;
+}
+.Navbar .menu .nav_grid .list .nav_project .nav_list li {
+  display: none;
+  margin: 0 10px;
+  cursor: pointer;
+  font-size: 20px;
+  padding-top: 5px;
+}
+.Navbar .menu .nav_grid .list .nav_project .nav_list li a {
+  color: #ffffff;
+}
+.Navbar .menu .nav_grid .list:hover .text, .Navbar .menu .nav_grid .list:active .text {
+  background-color: rgb(214, 98, 3);
+  color: #ffffff;
+  border-radius: 10px;
+}
+.Navbar .menu .nav_grid .list:hover .nav_project .text, .Navbar .menu .nav_grid .list:active .nav_project .text {
+  border-radius: 10px 10px 0 0;
+}
+.Navbar .menu .nav_grid .list:hover .nav_project .nav_list, .Navbar .menu .nav_grid .list:active .nav_project .nav_list {
+  background-color: #000;
+  border-radius: 0 0 10px 10px;
+}
+.Navbar .menu .nav_grid .list:hover .nav_project .nav_list li, .Navbar .menu .nav_grid .list:active .nav_project .nav_list li {
+  display: block;
+  border-bottom: 1px rgb(214, 98, 3) solid;
+  text-align: right;
+  padding-bottom: 5px;
+}
+@media (max-width: 820px) {
+  .Navbar .nav_container {
+    display: flex;
+  }
+  .Navbar .nav_container .nav_grid {
+    display: none;
+  }
+}
+.Navbar nav {
+  height: 2em;
+  display: flex;
+  justify-content: flex-start;
+  margin: 1.5em;
+  position: fixed;
+  z-index: 52;
+}
+.Navbar nav .burger-menu {
+  height: 100%;
+  width: 2.5em;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  cursor: pointer;
+  /* ----- animations--------- */
+  /* clicked */
+  /* unclicked */
+}
+.Navbar nav .burger-menu .burger-bar {
+  width: 2.5em;
+  height: 0.4em;
+  background-color: rgb(214, 98, 3);
+  border-radius: 0.1em;
+}
+.Navbar nav .burger-menu .burger-bar.clicked:nth-child(1) {
+  transform: rotate(45deg) translate(0.5em, 0.75em);
+  transition: ease-out 0.5s;
+  background-color: #ffffff;
+}
+.Navbar nav .burger-menu .burger-bar.clicked:nth-child(2) {
+  transform: scale(0.1);
+  transition: ease-out 0.5s;
+  background-color: #ffffff;
+}
+.Navbar nav .burger-menu .burger-bar.clicked:nth-child(3) {
+  transform: rotate(135deg) translate(-0.4em, 0.65em);
+  transition: ease-out 0.5s;
+  background-color: #ffffff;
+}
+.Navbar nav .burger-menu .burger-bar.unclicked {
+  transform: rotate(0) translate(0);
+  transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.5s;
+}
+.Navbar .hidden {
+  width: 0%;
+  height: 0%;
+}
+.Navbar .visible {
+  width: 100%;
+  height: 10vh;
+  border-bottom: 1px solid #ffffff;
+}
+.Navbar .visible .logo {
+  display: inline;
+  opacity: 1;
+  transition: opacity 0.35s 0.35s;
+}
+.Navbar .visible .nav_grid {
+  transition: opacity 0.45s 0.45s;
+  opacity: 1;
+}
+.Navbar .visible .nav_grid .list {
+  display: flex;
+}
+
+@media (max-width: 500px) {
+  .Navbar {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .Navbar .menu {
+    flex-direction: column;
+    transition: width 0.5s, height 0.5s;
+    transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
+  }
+  .Navbar .menu .nav_grid {
+    flex-direction: column;
+    margin-right: 0;
+  }
+  .Navbar .menu .nav_grid .list {
+    margin-bottom: 0.5rem;
+    border-bottom: 1px solid #fff;
+  }
+  .Navbar .visible {
+    height: 40vh;
+  }
+  .Navbar .visible .logo {
+    transition: opacity 0.25s 0.25s;
+  }
+  .Navbar .visible .nav_grid {
+    transition: opacity 0.3s 0.3s;
+  }
+  .Navbar nav .burger-menu {
+    align-items: flex-end;
+    height: 1.5rem;
+    /* unclicked */
+  }
+  .Navbar nav .burger-menu .burger-bar {
+    width: 2rem;
+    height: 0.35rem;
+    border-radius: 0.2rem;
+  }
+  .Navbar nav .burger-menu .burger-bar.clicked:nth-child(1) {
+    transform: rotate(45deg) translate(0.5em, 0.5em);
+    transition: ease-out 0.5s;
+    background-color: #ffffff;
+  }
+  .Navbar nav .burger-menu .burger-bar.clicked:nth-child(2) {
+    transform: scale(0.1);
+    transition: ease-out 0.5s;
+    background-color: #ffffff;
+  }
+  .Navbar nav .burger-menu .burger-bar.clicked:nth-child(3) {
+    transform: rotate(135deg) translate(-0.3em, 0.3em);
+    transition: ease-out 0.5s;
+    background-color: #ffffff;
+  }
+  .Navbar nav .burger-menu .burger-bar.unclicked {
+    transform: rotate(0) translate(0);
+    transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.5s;
+  }
+}
+.contact_container {
+  background-color: #ffe5b6;
+  width: 100%;
+  height: auto;
+  display: block;
+  padding-bottom: 3rem;
+}
+.contact_container h1.contact_ctitle {
+  text-align: center;
+  padding-top: 1.5rem;
+  padding-bottom: 1rem;
+}
+.contact_container h1.contact_ctitle:after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 3px;
+  margin: 5px auto 40px;
+  background-color: #383838;
+}
+.contact_container .grid-container {
+  display: grid;
+  grid-template-columns: 30% 30%;
+  justify-content: center;
+}
+.contact_container .grid-container .grid-itemLeft {
+  font-size: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contact_container .grid-container .grid-itemLeft .content_info {
+  padding-bottom: 2rem;
+}
+.contact_container .grid-container .grid-itemLeft .content_info .col {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  height: 40px;
+}
+.contact_container .grid-container .grid-itemLeft .content_info .col .svg {
+  width: 20px;
+}
+.contact_container .grid-container .grid-itemLeft .content_info .col p {
+  padding-left: 15px;
+  font-family: "Microsoft YaHei", sans-serif;
+}
+.contact_container .grid-container .grid-itemLeft .content_info .col:hover .svg {
+  -webkit-animation: jump 0.3s linear 1 forwards normal;
+          animation: jump 0.3s linear 1 forwards normal;
+  display: inline-block;
+  transform: translate3d(0, 0, 0);
+}
+@-webkit-keyframes jump {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(0, -0.5em, 0);
+  }
+}
+@keyframes jump {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(0, -0.5em, 0);
+  }
+}
+.contact_container .grid-container .grid-itemRight {
+  display: flex;
+  justify-content: center;
+}
+.contact_container .content_link {
+  display: flex;
+}
+.contact_container .content_link li {
+  padding: 0.5rem;
+}
+.contact_container .content_link li :hover svg {
+  -webkit-animation: jump 0.3s linear 1 forwards normal;
+          animation: jump 0.3s linear 1 forwards normal;
+  display: inline-block;
+  transform: translate3d(0, 0, 0);
+}
+@keyframes jump {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(0, -0.5em, 0);
+  }
+}
+.contact_container .content_link li a svg {
+  width: 50px;
+}
+.contact_container .content_info {
+  flex-direction: row;
+  font-size: 20px;
+  align-items: flex-start;
+}
+
+@media (max-width: 820px) {
+  .contact_container {
+    padding-bottom: 2rem;
+  }
+  .contact_container .grid-container {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .contact_container .grid-container .grid-itemLeft .content_info {
+    padding-bottom: 1rem;
+  }
+}
+.form_container .contactform {
+  display: flex;
+  flex-direction: column;
+  font-weight: 700;
+}
+.form_container .contactform .col {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.form_container .contactform .col .text_group {
+  display: flex;
+  flex-direction: column;
+  padding: 0rem 1.5rem 1.5rem 1.5rem;
+}
+.form_container .contactform .col .text_group input {
+  background-color: #fff;
+  border: 1px solid;
+}
+.form_container .contactform .col label {
+  padding-bottom: 0.5rem;
+}
+.form_container .contactform .col input {
+  padding: 0.3rem;
+}
+.form_container .contactform textarea {
+  resize: none;
+}
+.form_container .contactform .form_button {
+  font-size: 2rem;
+  background-color: #bb5a3a;
+  border: 0;
+  height: 125px;
+  width: 125px;
+  border-radius: 50%;
+  margin-top: 3.5rem;
+  color: #fdf2f0;
+  cursor: pointer;
+}
+.form_container .contactform button:hover {
+  background-color: rgba(187, 90, 58, 0.7333333333);
+  transition: all 0.3s ease;
+}
+
+@media (max-width: 820px) {
+  .form_container {
+    padding-bottom: 1rem;
+  }
+  .form_container .contactform .col .text_group {
+    padding: 0 1.5rem 1.5rem 1.5rem;
+  }
+  .form_container .contactform .form_button {
+    height: 150px;
+    width: 150px;
+    font-size: 2rem;
+    margin-top: 2rem;
+  }
+  .form_container .contactform textarea {
+    width: 15rem;
+  }
+}
+@media (max-width: 500px) {
+  .form_container {
+    padding-bottom: 1rem;
+  }
+  .form_container .contactform .col input {
+    width: 9rem;
+    height: 1.5rem;
+  }
+  .form_container .contactform .col .text_group {
+    padding: 0 0.5rem 0.5rem 0.5rem;
+  }
+  .form_container .contactform .form_button {
+    height: 90px;
+    width: 90px;
+    font-size: 1.5rem;
+    margin-top: 3.5rem;
+  }
+  .form_container .contactform textarea {
+    width: 13rem;
+  }
+}
+.notfound {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+  font-family: "The Nautigal", cursive;
+  font-size: 50px;
+  text-align: center;
+  background-color: #f1f1f1;
+}
+.notfound .notfound_content {
+  margin-top: 150px;
+  word-spacing: 10px;
+}
+.notfound .notfound_content h1 {
+  font-size: 3em;
+  font-weight: 700;
+}
+.notfound .notfound_content h2 {
+  font-size: 2em;
+}
+.notfound img {
+  width: 45rem;
+}/*# sourceMappingURL=style.css.map */

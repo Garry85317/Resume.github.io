@@ -1,0 +1,66 @@
+.project_container {
+  width: 100%;
+  height: 100vh;
+  padding-top: 8rem;
+
+  .project_title {
+    text-align: center;
+    padding-bottom: 3rem;
+  }
+
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    .project_grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 100px 100px;
+    }
+
+    h4 {
+      text-align: center;
+      font-size: 1rem;
+      padding-top: 1.5rem;
+    }
+  }
+
+  .work_list_img img {
+    width: 20rem;
+    height: 10rem;
+    overflow: hidden;
+    object-fit: cover;
+    transition: all 0.3s ease;
+
+    &:hover {
+      transform: scale(1.25);
+    }
+  }
+}
+
+@include pad {
+  .project_container {
+    padding-bottom: 3rem;
+
+    .row {
+      .project_grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 60px 40px;
+      }
+    }
+  }
+}
+
+@include mobile {
+  .project_container {
+    padding-top: 5rem;
+    height: auto;
+
+    .row {
+      .project_grid {
+        grid-template-columns: repeat(1, 1fr);
+      }
+    }
+  }
+}

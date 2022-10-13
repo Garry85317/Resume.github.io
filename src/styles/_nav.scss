@@ -1,0 +1,270 @@
+/* ---------------- Navbar and burger menu ------------------ */
+.Navbar {
+  .menu {
+    display: flex;
+    background-color: #000;
+    position: fixed;
+    z-index: 51;
+    align-items: center;
+    justify-content: space-around;
+    -webkit-transition: width 0.4s, height 0.4s, -webkit-transform 0.4s;
+    transition: width 0.4s, height 0.4s, transform 0.4s;
+    -webkit-transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
+    transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
+
+    .logo {
+      margin: 0 10em;
+      opacity: 0;
+      display: none;
+
+      h1 {
+        color: #ffffff;
+      }
+    }
+
+    .nav_grid {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      margin-right: 2.5rem;
+      opacity: 0;
+
+      .list {
+        display: none;
+        align-items: center;
+        cursor: pointer;
+
+        .text {
+          display: grid;
+          color: #ffffff;
+          align-items: center;
+          font-size: 1.2rem;
+          font-weight: 700;
+          width: 100px;
+          height: 40px;
+          justify-content: center;
+        }
+
+        .nav_project {
+          position: relative;
+          display: block;
+
+          .nav_list {
+            height: 150px;
+            position: absolute;
+            overflow: auto;
+            width: 100px;
+            padding-top: 5px;
+
+            li {
+              display: none;
+              margin: 0 10px;
+              cursor: pointer;
+              font-size: 20px;
+              padding-top: 5px;
+
+              a {
+                color: #ffffff
+              }
+            }
+          }
+        }
+
+        &:hover,
+        &:active {
+          .text {
+            background-color: rgb(214, 98, 3);
+            color: #ffffff;
+            border-radius: 10px;
+          }
+
+          .nav_project {
+            .text {
+              border-radius: 10px 10px 0 0;
+            }
+
+            .nav_list {
+              background-color: #000;
+              border-radius: 0 0 10px 10px;
+
+              li {
+                display: block;
+                border-bottom: 1px rgb(214, 98, 3) solid;
+                text-align: right;
+                padding-bottom: 5px;
+
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @include pad {
+    .nav_container {
+      display: flex;
+
+      .nav_grid {
+        display: none;
+      }
+    }
+  }
+
+  nav {
+    height: 2em;
+    display: flex;
+    justify-content: flex-start;
+    margin: 1.5em;
+    position: fixed;
+    z-index: 52;
+
+    .burger-menu {
+      height: 100%;
+      width: 2.5em;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: space-between;
+      cursor: pointer;
+
+      .burger-bar {
+        width: 2.5em;
+        height: 0.4em;
+        background-color: rgb(214, 98, 3);
+        border-radius: 0.1em;
+      }
+
+      /* ----- animations--------- */
+      /* clicked */
+      .burger-bar.clicked:nth-child(1) {
+        transform: rotate(45deg) translate(0.5em, 0.75em);
+        transition: ease-out 0.5s;
+        background-color: #ffffff;
+      }
+
+      .burger-bar.clicked:nth-child(2) {
+        transform: scale(0.1);
+        transition: ease-out 0.5s;
+        background-color: #ffffff;
+      }
+
+      .burger-bar.clicked:nth-child(3) {
+        transform: rotate(135deg) translate(-0.4em, 0.65em);
+        transition: ease-out 0.5s;
+        background-color: #ffffff;
+      }
+
+      /* unclicked */
+      .burger-bar.unclicked {
+        transform: rotate(0) translate(0);
+        transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.5s;
+      }
+    }
+  }
+
+  /* ------------- sliding menu ------------------ */
+  .hidden {
+    width: 0%;
+    height: 0%;
+  }
+
+  .visible {
+    width: 100%;
+    height: 10vh;
+    border-bottom: 1px solid #ffffff;
+
+    .logo {
+      display: inline;
+      opacity: 1;
+      -webkit-transition: opacity 0.35s 0.35s;
+      transition: opacity 0.35s 0.35s;
+    }
+
+    .nav_grid {
+      -webkit-transition: opacity 0.45s 0.45s;
+      transition: opacity 0.45s 0.45s;
+      opacity: 1;
+
+      .list {
+        display: flex;
+      }
+    }
+  }
+}
+
+@include mobile {
+  .Navbar {
+    display: flex;
+    flex-direction: row-reverse;
+
+    .menu {
+      flex-direction: column;
+      -webkit-transition: width 0.5s, height 0.5s;
+      transition: width 0.5s, height 0.5s;
+      -webkit-transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
+      transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
+
+      .nav_grid {
+        flex-direction: column;
+        margin-right: 0;
+
+        .list {
+          margin-bottom: 0.5rem;
+          border-bottom: 1px solid #fff;
+        }
+      }
+    }
+
+    .visible {
+      height: 40vh;
+
+      .logo {
+        -webkit-transition: opacity 0.25s 0.25s;
+        transition: opacity 0.25s 0.25s;
+      }
+
+      .nav_grid {
+        -webkit-transition: opacity 0.3s 0.3s;
+        transition: opacity 0.3s 0.3s;
+      }
+    }
+
+    nav {
+      .burger-menu {
+        align-items: flex-end;
+        height: 1.5rem;
+
+        .burger-bar {
+          width: 2rem;
+          height: 0.35rem;
+          border-radius: 0.2rem;
+        }
+
+        .burger-bar.clicked:nth-child(1) {
+          transform: rotate(45deg) translate(0.5em, 0.5em);
+          transition: ease-out 0.5s;
+          background-color: #ffffff;
+        }
+
+        .burger-bar.clicked:nth-child(2) {
+          transform: scale(0.1);
+          transition: ease-out 0.5s;
+          background-color: #ffffff;
+        }
+
+        .burger-bar.clicked:nth-child(3) {
+          transform: rotate(135deg) translate(-0.3em, 0.3em);
+          transition: ease-out 0.5s;
+          background-color: #ffffff;
+        }
+
+        /* unclicked */
+        .burger-bar.unclicked {
+          transform: rotate(0) translate(0);
+          transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.5s;
+        }
+      }
+    }
+  }
+}

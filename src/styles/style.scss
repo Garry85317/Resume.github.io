@@ -1,0 +1,18 @@
+@mixin pad {
+    @media (max-width: 820px) {
+        @content;
+    }
+}
+
+@mixin mobile {
+    @media (max-width: 500px) {
+        @content;
+    }
+}
+
+@import "./footer";
+@import "./nav";
+@import "./contact";
+@import "./contactform";
+@import "./notfound";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC&family=Poppins&family=Roboto+Condensed&family=The+Nautigal:wght@700&display=swap");

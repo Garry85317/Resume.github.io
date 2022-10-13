@@ -1,0 +1,129 @@
+.contact_container {
+  background-color: #ffe5b6;
+  width: 100%;
+  height: auto;
+  display: block;
+  padding-bottom: 3rem;
+
+  h1.contact_ctitle {
+    text-align: center;
+    padding-top: 1.5rem;
+    padding-bottom: 1rem;
+  }
+
+  h1.contact_ctitle:after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 3px;
+    margin: 5px auto 40px;
+    background-color: #383838;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: 30% 30%;
+    justify-content: center;
+
+    .grid-itemLeft {
+      font-size: 30px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .content_info {
+        padding-bottom: 2rem;
+
+        .col {
+          display: flex;
+          justify-content: left;
+          align-items: center;
+          height: 40px;
+
+          .svg {
+            width: 20px;
+          }
+
+          p {
+            padding-left: 15px;
+            font-family: "Microsoft YaHei", sans-serif;
+          }
+        }
+
+        .col:hover .svg {
+          animation: jump 0.3s linear 1 forwards normal;
+          display: inline-block;
+          transform: translate3d(0, 0, 0);
+
+          @keyframes jump {
+            0% {
+              transform: translate3d(0, 0, 0);
+            }
+
+            100% {
+              transform: translate3d(0, -0.5em, 0);
+            }
+          }
+        }
+      }
+    }
+
+    .grid-itemRight {
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  .content_link {
+    display: flex;
+
+    li {
+      padding: 0.5rem;
+
+      :hover svg {
+        animation: jump 0.3s linear 1 forwards normal;
+        display: inline-block;
+        transform: translate3d(0, 0, 0);
+
+        @keyframes jump {
+          0% {
+            transform: translate3d(0, 0, 0);
+          }
+
+          100% {
+            transform: translate3d(0, -0.5em, 0);
+          }
+        }
+      }
+
+      a {
+        svg {
+          width: 50px;
+        }
+      }
+    }
+  }
+
+  .content_info {
+    flex-direction: row;
+    font-size: 20px;
+    align-items: flex-start;
+  }
+}
+
+@include pad {
+  .contact_container {
+    padding-bottom: 2rem;
+
+    .grid-container {
+      display: flex;
+      flex-direction: column-reverse;
+
+      .grid-itemLeft {
+        .content_info {
+          padding-bottom: 1rem;
+        }
+      }
+    }
+  }
+}

@@ -7,7 +7,7 @@ import Todo from "./Todo"
 import Pexels from "./Pexels"
 import ColourGenerate from "./Colour"
 import Weather from "./Weather";
-import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom'
+import { HashRouter as Router, Routes, Route, Navigate } from 'react-router-dom'
 import React from 'react';
 
 function App() {

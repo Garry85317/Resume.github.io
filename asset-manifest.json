@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Resume.github.io/static/css/main.db2f6437.css",
-    "main.js": "/Resume.github.io/static/js/main.5b2b1ca4.js",
+    "main.js": "/Resume.github.io/static/js/main.9c13c669.js",
     "static/media/nice.svg": "/Resume.github.io/static/media/nice.2919cc074fe5037252fab011a854a7c5.svg",
     "static/media/day-snowing.svg": "/Resume.github.io/static/media/day-snowing.a17d49d73059cdb1bec0291e191db6f9.svg",
     "static/media/cog.svg": "/Resume.github.io/static/media/cog.64eda1d34cd3fad660675c3d6e683a16.svg",
@@ -37,10 +37,10 @@
     "static/media/envelope-solid.svg": "/Resume.github.io/static/media/envelope-solid.67f43240bab7de472e72057f991081ec.svg",
     "static/media/night-clear.svg": "/Resume.github.io/static/media/night-clear.d737d7365e6809abf5a69f8bb2dde7a8.svg",
     "main.db2f6437.css.map": "/Resume.github.io/static/css/main.db2f6437.css.map",
-    "main.5b2b1ca4.js.map": "/Resume.github.io/static/js/main.5b2b1ca4.js.map"
+    "main.9c13c669.js.map": "/Resume.github.io/static/js/main.9c13c669.js.map"
   },
   "entrypoints": [
     "static/css/main.db2f6437.css",
-    "static/js/main.5b2b1ca4.js"
+    "static/js/main.9c13c669.js"
   ]
 }

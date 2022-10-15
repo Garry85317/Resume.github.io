@@ -30,12 +30,12 @@ const Contact = () => {
               </a>
             </li>
             <li>
-              <a href="#">
+              <a href="https://github.com/Garry85317">
                 <Icons.Github />
               </a>
             </li>
             <li>
-              <a href="#">
+              <a href="https://www.instagram.com/ywei317/">
                 <Icons.Instagram />
               </a>
             </li>

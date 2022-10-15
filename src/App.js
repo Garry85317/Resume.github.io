@@ -1,6 +1,7 @@
 import Nav from "./components/Nav";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import Loading from "./components/Loading";
 import NotFound from "./components/NotFound";
 import MyCV from "./CV";
 import Todo from "./Todo"
@@ -11,16 +12,9 @@ import { HashRouter as Router, Routes, Route, Navigate } from 'react-router-dom'
 import React from 'react';
 
 function App() {
-  // const LazyLoad = (path) => {
-  //   const Comp = React.lazy(() => import(`../${path}`))
-  //   return (
-  //     <React.Suspense >
-  //       <Comp />
-  //     </React.Suspense>
-  //   )
-  // }
   return (
     <div>
+      <Loading />
       <Router>
         <Nav />
         <Routes>
@@ -34,9 +28,9 @@ function App() {
           <Route element={<Weather />} path={'/weather'}></Route>
           <Route path='*' element={<NotFound />} />
         </Routes>
+        <Contact />
+        <Footer />
       </Router>
-      <Contact />
-      <Footer />
     </div>
   );
 }

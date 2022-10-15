@@ -3,6 +3,7 @@
     @content;
   }
 }
+
 @mixin pc {
   @media (min-width: 1024px) {
     @content;
@@ -12,8 +13,9 @@
 .colourGenerate {
   background-color: #eee;
   min-height: 100vh;
+
   .container {
-    padding: 4rem 2rem;
+    padding: 10rem 2rem 0rem 2rem;
     max-width: 1400px;
     margin: 0 auto;
 
@@ -24,16 +26,19 @@
       text-transform: uppercase;
       margin-bottom: 1rem;
     }
+
     p {
       color: #aaa;
       font-size: 1.25rem;
       margin-bottom: 2rem;
+
       .generator-button {
         color: #b67278;
         font-weight: 600;
         font-size: inherit;
         transition: 0.4s ease-out;
       }
+
       :hover {
         padding-left: 0.5rem;
         padding-right: 0.5rem;
@@ -47,10 +52,12 @@
       font-weight: 700;
       margin-bottom: 1rem;
     }
+
     .colours {
       display: grid;
       grid-template-columns: repeat(1, 1fr);
       grid-gap: 1rem;
+
       .colour {
         display: flex;
         align-items: center;
@@ -62,27 +69,33 @@
         transition: 0.5s ease-out;
         border: 2px solid transparent;
         height: 8vh;
+
         input {
           text-align: center;
         }
       }
+
       .lock-toggle {
         width: 1rem;
         opacity: 0.5;
         transition: 0.4s;
       }
+
       .lock-toggle.is-locked {
         opacity: 1;
       }
     }
+
     @include pad {
       .colours {
         grid-template-columns: repeat(2, 1fr);
+
         .colour {
           flex-direction: column;
           align-items: center;
           justify-content: center;
           height: 25vh;
+
           input {
             margin-top: 1rem;
             margin-bottom: 1rem;
@@ -90,9 +103,11 @@
         }
       }
     }
+
     @include pc {
       .colours {
         grid-template-columns: repeat(6, 1fr);
+
         .colour {
           height: 60vh;
         }
@@ -130,6 +145,7 @@ button {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.4);
+
   .alert {
     background-color: antiquewhite;
     width: 20rem;
@@ -139,6 +155,7 @@ button {
     align-items: center;
     border-radius: 3rem;
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+
     .msg {
       padding-right: 0.5rem;
     }

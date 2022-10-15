@@ -27,11 +27,9 @@ const Pexels = () => {
     setData(parseData.photos);
   };
 
-  //Load more picture
   const morepicture = async () => {
     let newURL;
 
-    //這裡
     if (currentSearch === "") {
       newURL = `https://api.pexels.com/v1/curated?page=${page}&per_page=15`;
     } else {
@@ -65,10 +63,10 @@ const Pexels = () => {
   }, [currentSearch]);
 
   return (
-    <div className="pexels" style={{ minHeight: "100vh" }}>
+    <div className="pexels">
+      <div className="pexels_title"><h1>PEXELS</h1></div>
       <Search
         search={() => {
-          //JS Closure
           setCurrentSearch(input);
         }}
         setInput={setInput}

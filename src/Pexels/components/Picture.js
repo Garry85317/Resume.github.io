@@ -1,4 +1,5 @@
 import React from "react";
+import axios from "axios";
 
 const Picture = ({ data }) => {
   return (
@@ -8,9 +9,8 @@ const Picture = ({ data }) => {
         <img src={data.src.large} alt="" />
       </div>
       <p>
-        Download Image:{" "}
-        <a target="_blank" rel="noopener noreferrer" href={data.src.large}>
-          Click Here
+        <a rel="noopener noreferrer" href={data.src.large}>
+          Download
         </a>
       </p>
     </div>

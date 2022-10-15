@@ -24,6 +24,18 @@ ul {
 }
 
 .pexels {
+  padding-top: 8rem;
+
+  @include mobile {
+    padding-top: 5rem;
+  }
+
+  .pexels_title {
+    h1 {
+      text-align: center;
+    }
+  }
+
   .morePicture {
     display: flex;
     justify-content: center;
@@ -98,11 +110,3 @@ ul {
     }
   }
 }
-
-// @include mobile {
-//   .pictures {
-//     .picture {
-//       width: 300px;
-//     }
-//   }
-// }

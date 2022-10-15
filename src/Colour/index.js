@@ -85,7 +85,6 @@ function ColourGenerate() {
         <h1>Colours</h1>
         <p>
           Press[
-          {/* 按下button時會執行generateColor */}
           <button className="generator-button" ref={button} onClick={generateColor}>
             Enter
           </button>
@@ -94,7 +93,6 @@ function ColourGenerate() {
 
         <h4>Generator</h4>
 
-        {/* 將上方的function引入進來 */}
         <div className="colours">
           <Colours />
         </div>

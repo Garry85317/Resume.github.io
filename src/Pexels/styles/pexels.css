@@ -17,6 +17,17 @@ ul {
   list-style-type: none;
 }
 
+.pexels {
+  padding-top: 8rem;
+}
+@media (max-width: 500px) {
+  .pexels {
+    padding-top: 5rem;
+  }
+}
+.pexels .pexels_title h1 {
+  text-align: center;
+}
 .pexels .morePicture {
   display: flex;
   justify-content: center;

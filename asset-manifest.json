@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Resume.github.io/static/css/main.bcba1f8d.css",
-    "main.js": "/Resume.github.io/static/js/main.cbcf802c.js",
+    "main.css": "/Resume.github.io/static/css/main.db2f6437.css",
+    "main.js": "/Resume.github.io/static/js/main.5b2b1ca4.js",
     "static/media/nice.svg": "/Resume.github.io/static/media/nice.2919cc074fe5037252fab011a854a7c5.svg",
     "static/media/day-snowing.svg": "/Resume.github.io/static/media/day-snowing.a17d49d73059cdb1bec0291e191db6f9.svg",
     "static/media/cog.svg": "/Resume.github.io/static/media/cog.64eda1d34cd3fad660675c3d6e683a16.svg",
@@ -25,9 +25,9 @@
     "static/media/night-cloudy-fog.svg": "/Resume.github.io/static/media/night-cloudy-fog.1f12d184e62b4649f301d9e6fbb768c7.svg",
     "static/media/night-fog.svg": "/Resume.github.io/static/media/night-fog.1f12d184e62b4649f301d9e6fbb768c7.svg",
     "static/media/project.svg": "/Resume.github.io/static/media/project.1134c92a884c6b262e8885303ce4ee82.svg",
+    "index.html": "/Resume.github.io/index.html",
     "static/media/day-clear.svg": "/Resume.github.io/static/media/day-clear.d1ba2f7036792fe22b22baa5e4fd816a.svg",
     "static/media/about me.svg": "/Resume.github.io/static/media/about me.3c21be76fb3fe8724b0093d906d80c36.svg",
-    "index.html": "/Resume.github.io/index.html",
     "static/media/linkedin.svg": "/Resume.github.io/static/media/linkedin.5d757b3fd1cf0ccc3d8397d7f119a4fa.svg",
     "static/media/unlock-solid.svg": "/Resume.github.io/static/media/unlock-solid.b40e4ce09ee09d7807b7627de538da3e.svg",
     "static/media/phone-solid.svg": "/Resume.github.io/static/media/phone-solid.b70d9a41d0b24163a99e9c7d3cd1b57b.svg",
@@ -36,11 +36,11 @@
     "static/media/location-dot-solid.svg": "/Resume.github.io/static/media/location-dot-solid.0efc44250a4fc686d1138e81b635ecba.svg",
     "static/media/envelope-solid.svg": "/Resume.github.io/static/media/envelope-solid.67f43240bab7de472e72057f991081ec.svg",
     "static/media/night-clear.svg": "/Resume.github.io/static/media/night-clear.d737d7365e6809abf5a69f8bb2dde7a8.svg",
-    "main.bcba1f8d.css.map": "/Resume.github.io/static/css/main.bcba1f8d.css.map",
-    "main.cbcf802c.js.map": "/Resume.github.io/static/js/main.cbcf802c.js.map"
+    "main.db2f6437.css.map": "/Resume.github.io/static/css/main.db2f6437.css.map",
+    "main.5b2b1ca4.js.map": "/Resume.github.io/static/js/main.5b2b1ca4.js.map"
   },
   "entrypoints": [
-    "static/css/main.bcba1f8d.css",
-    "static/js/main.cbcf802c.js"
+    "static/css/main.db2f6437.css",
+    "static/js/main.5b2b1ca4.js"
   ]
 }

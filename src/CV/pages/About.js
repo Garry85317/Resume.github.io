@@ -1,6 +1,21 @@
-import React from "react";
+import React, { useEffect } from "react";
+import 'animate.css';
+import WOW from 'wowjs';
+import ScrollReveal from "scrollreveal";
 
 const About = () => {
+  useEffect(() => {
+    const wow = new WOW.WOW({ scrollContainer: 'about_container', mobile: true });
+    wow.init();
+    ScrollReveal().reveal('.about_main', {
+      reset: true,
+      duration: 2000,
+      origin: "bottom",
+      distance: "200px",
+      easing: "cubic-bezier(0.3, 0, 0, 1)",
+    });
+  }, []);
+
   return (
     <div className="about_container" id="about">
       <h1 className="about_title">About Me</h1>

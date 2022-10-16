@@ -1,14 +1,29 @@
-import React from "react";
-import { NavLink, Link } from "react-router-dom";
+import React, { useEffect } from "react";
+import { NavLink } from "react-router-dom";
+import 'animate.css';
+import WOW from 'wowjs';
+import ScrollReveal from "scrollreveal";
 
 const Project = () => {
+  useEffect(() => {
+    const wow = new WOW.WOW({ scrollContainer: 'project_container', mobile: true });
+    wow.init();
+    ScrollReveal().reveal('.project_grid', {
+      reset: true,
+      duration: 2000,
+      origin: "bottom",
+      distance: "200px",
+      easing: "cubic-bezier(0.3, 0, 0, 1)",
+    });
+  }, []);
+
   return (
     <div className="project_container" id="Project">
       <h1 className="project_title">Project</h1>
       <ul className="row">
         <div className="project_grid">
           <NavLink to="/pexels">
-            <li className="work_card ">
+            <li className="work_card">
               <div className="work_list_img">
                 <img
                   src={process.env.PUBLIC_URL + "/IMG/photo-website.jpg"}
@@ -19,7 +34,7 @@ const Project = () => {
             </li>
           </NavLink>
           <NavLink to="/todo-list">
-            <li className="work_card ">
+            <li className="work_card">
               <div className="work_list_img">
                 <img
                   src={process.env.PUBLIC_URL + "/IMG/Todo.jpg"}
@@ -38,7 +53,7 @@ const Project = () => {
             <h4>Witega 威特嘉科技開發股份有限公司</h4>
           </li>
           <NavLink to="/colour-generate">
-            <li className="work_card ">
+            <li className="work_card">
               <div className="work_list_img">
                 <img src={process.env.PUBLIC_URL + "/IMG/colour.jpg"} alt="" />
               </div>
@@ -54,7 +69,7 @@ const Project = () => {
             </li>
           </NavLink>
           <NavLink to="/*">
-            <li className="work_card ">
+            <li className="work_card">
               <div className="work_list_img">
                 <img src={process.env.PUBLIC_URL + "/IMG/shop.jpg"} alt="" />
               </div>

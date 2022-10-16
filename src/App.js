@@ -14,7 +14,7 @@ import React from 'react';
 function App() {
   return (
     <div>
-      <Loading />
+      {/* <Loading /> */}
       <Router>
         <Nav />
         <Routes>

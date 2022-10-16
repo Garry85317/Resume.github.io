@@ -1,12 +1,21 @@
 import React, { useEffect } from "react";
+import 'animate.css';
 import WOW from 'wowjs';
+import ScrollReveal from "scrollreveal";
 
 const Skills = () => {
 
   useEffect(() => {
     const wow = new WOW.WOW({ scrollContainer: 'skills_container', mobile: true });
     wow.init();
-  }, [])
+    ScrollReveal().reveal('.skillsbar_container', {
+      reset: true,
+      duration: 2000,
+      origin: "bottom",
+      distance: "200px",
+      easing: "cubic-bezier(0.3, 0, 0, 1)",
+    });
+  }, []);
 
   return (
     <div className="skills_container" id="Skills">

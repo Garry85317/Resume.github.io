@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Resume.github.io/static/css/main.21a936bc.css",
-    "main.js": "/Resume.github.io/static/js/main.3dcdbaeb.js",
+    "main.css": "/Resume.github.io/static/css/main.aa58c060.css",
+    "main.js": "/Resume.github.io/static/js/main.c0481e26.js",
     "static/media/nice.svg": "/Resume.github.io/static/media/nice.2919cc074fe5037252fab011a854a7c5.svg",
     "static/media/day-snowing.svg": "/Resume.github.io/static/media/day-snowing.a17d49d73059cdb1bec0291e191db6f9.svg",
     "static/media/cog.svg": "/Resume.github.io/static/media/cog.64eda1d34cd3fad660675c3d6e683a16.svg",
@@ -12,7 +12,7 @@
     "static/media/day-cloudy.svg": "/Resume.github.io/static/media/day-cloudy.9911dd480a87d0235960346a658a9bc1.svg",
     "static/media/rain.svg": "/Resume.github.io/static/media/rain.8e10718e150267e9dc74f9cde4f669ea.svg",
     "static/media/night-partially-clear-with-rain.svg": "/Resume.github.io/static/media/night-partially-clear-with-rain.9cc69bef7d4b2eaae9765cabb033ca2a.svg",
-    "static/media/github S.svg": "/Resume.github.io/static/media/github S.b8a18a6f28b0fa0d8a9ed689099497cb.svg",
+    "static/media/github S.svg": "/Resume.github.io/static/media/github S.73e9c2497de305023901fe0087e33778.svg",
     "static/media/refresh.svg": "/Resume.github.io/static/media/refresh.e352fc8bae35a5d76241e0bd9ec1d4c5.svg",
     "static/media/skill.svg": "/Resume.github.io/static/media/skill.a18edb07fa1460ceebe02b2f91ed5db3.svg",
     "static/media/night-thunderstorm.svg": "/Resume.github.io/static/media/night-thunderstorm.2bd32031dd460c1a4e3280645202e561.svg",
@@ -20,7 +20,7 @@
     "static/media/day-fog.svg": "/Resume.github.io/static/media/day-fog.74ffaa9dd913b7d9b71e87cdf3f1b945.svg",
     "static/media/loading.svg": "/Resume.github.io/static/media/loading.f8d56fd58925a1aaab4f80f1d8865c03.svg",
     "static/media/night-cloudy.svg": "/Resume.github.io/static/media/night-cloudy.dde309547bea61e5c31791e5b6433726.svg",
-    "static/media/instagram S.svg": "/Resume.github.io/static/media/instagram S.14d9b5e736fe8da8deb89d60ab8f20ac.svg",
+    "static/media/instagram S.svg": "/Resume.github.io/static/media/instagram S.299854ed436665b39c0c0c562acdaa13.svg",
     "static/media/contact.svg": "/Resume.github.io/static/media/contact.e22ad706c4b2837155cd47a96f03cc5c.svg",
     "static/media/night-cloudy-fog.svg": "/Resume.github.io/static/media/night-cloudy-fog.1f12d184e62b4649f301d9e6fbb768c7.svg",
     "static/media/night-fog.svg": "/Resume.github.io/static/media/night-fog.1f12d184e62b4649f301d9e6fbb768c7.svg",
@@ -28,19 +28,19 @@
     "index.html": "/Resume.github.io/index.html",
     "static/media/day-clear.svg": "/Resume.github.io/static/media/day-clear.d1ba2f7036792fe22b22baa5e4fd816a.svg",
     "static/media/about me.svg": "/Resume.github.io/static/media/about me.3c21be76fb3fe8724b0093d906d80c36.svg",
-    "static/media/linkedin.svg": "/Resume.github.io/static/media/linkedin.5d757b3fd1cf0ccc3d8397d7f119a4fa.svg",
+    "static/media/linkedin.svg": "/Resume.github.io/static/media/linkedin.ea2ac23babaee440fc68a5f2d3afbb3d.svg",
     "static/media/unlock-solid.svg": "/Resume.github.io/static/media/unlock-solid.b40e4ce09ee09d7807b7627de538da3e.svg",
-    "static/media/phone-solid.svg": "/Resume.github.io/static/media/phone-solid.b70d9a41d0b24163a99e9c7d3cd1b57b.svg",
-    "static/media/facebook S.svg": "/Resume.github.io/static/media/facebook S.50e36e2f0bd3f9a180d9b7677dc7e7b9.svg",
+    "static/media/phone-solid.svg": "/Resume.github.io/static/media/phone-solid.ac2b2ffb4d839bbe35d4159fa0e709bb.svg",
+    "static/media/facebook S.svg": "/Resume.github.io/static/media/facebook S.dffcf3170eb9195183eda9641b526a33.svg",
     "static/media/lock-solid.svg": "/Resume.github.io/static/media/lock-solid.2ac6209e952eacc8f5a0baa11832f728.svg",
-    "static/media/location-dot-solid.svg": "/Resume.github.io/static/media/location-dot-solid.0efc44250a4fc686d1138e81b635ecba.svg",
-    "static/media/envelope-solid.svg": "/Resume.github.io/static/media/envelope-solid.67f43240bab7de472e72057f991081ec.svg",
+    "static/media/location-dot-solid.svg": "/Resume.github.io/static/media/location-dot-solid.5ee123ddcac16b83ddff14c54459825b.svg",
+    "static/media/envelope-solid.svg": "/Resume.github.io/static/media/envelope-solid.a9e6cb757f17de2210550372f728d850.svg",
     "static/media/night-clear.svg": "/Resume.github.io/static/media/night-clear.d737d7365e6809abf5a69f8bb2dde7a8.svg",
-    "main.21a936bc.css.map": "/Resume.github.io/static/css/main.21a936bc.css.map",
-    "main.3dcdbaeb.js.map": "/Resume.github.io/static/js/main.3dcdbaeb.js.map"
+    "main.aa58c060.css.map": "/Resume.github.io/static/css/main.aa58c060.css.map",
+    "main.c0481e26.js.map": "/Resume.github.io/static/js/main.c0481e26.js.map"
   },
   "entrypoints": [
-    "static/css/main.21a936bc.css",
-    "static/js/main.3dcdbaeb.js"
+    "static/css/main.aa58c060.css",
+    "static/js/main.c0481e26.js"
   ]
 }

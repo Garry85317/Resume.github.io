@@ -1,15 +1,31 @@
+@mixin mobile {
+  @media (max-width: 500px) {
+    @content;
+  }
+}
 
 .todo {
   .container {
-    background-color: #f0c597;
+    background-color: #FFF;
     width: 100%;
     min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+
+    .header h1 {
+      color: #292929;
+      text-align: center;
+      margin: 20px 0;
+      padding: 5px 0px;
+      font-size: 60px;
+      font-family: Arial, Helvetica, sans-serif;
+    }
 
     .app-wrapper {
-      background-color: #1a4b55;
+      background-color: #292929;
+      width: 800px;
       min-width: 450px;
       min-height: 650px;
       max-height: 650px;
@@ -17,12 +33,6 @@
       border-radius: 10px;
       box-shadow: 3px 6px 35px #000;
       overflow-y: scroll;
-
-      .header h1 {
-        color: #fff;
-        text-align: center;
-        margin: 30px 0;
-      }
 
       .task-input {
         outline: none;
@@ -60,9 +70,9 @@
 
           .list {
             width: 220px;
-            background-color: #1a4b55;
+            background-color: rgb(114, 114, 114);
             border: none;
-            color: #ccc;
+            color: #FFF;
             font-size: 20px;
             padding-left: 10px;
             margin-right: 15px;
@@ -122,4 +132,33 @@
 input:focus,
 button:focus {
   outline: none;
+}
+
+@include mobile {
+  .todo {
+    .container {
+      .header h1 {
+        font-size: 40px;
+      }
+
+      .app-wrapper {
+        background-color: #292929;
+        // width: 350px;
+        max-width: 350px;
+        min-width: 350px;
+
+        .task-input {
+          width: 190px;
+        }
+
+        .todolist {
+          .list-item {
+            .list {
+              width: 120px;
+            }
+          }
+        }
+      }
+    }
+  }
 }

@@ -4,7 +4,8 @@
   background-color: rgba(0, 0, 0, .5);
   background-size: cover;
   background-blend-mode: multiply;
-  background-attachment:fixed;
+  background-attachment: fixed;
+
   .greet_text {
     position: absolute;
     left: 55rem;
@@ -16,16 +17,16 @@
       font-weight: 600;
       font-style: italic;
       text-align: right;
-      text-shadow: 3px 3px 3px #ffffff;
-      color: rgb(214, 98, 3);
+      text-shadow: 2px 2px 1px #bdb3b3;
+      color: #fcf2d1;
     }
 
     h3 {
       font-size: 50px;
       font-weight: 700;
       text-align: right;
-      text-shadow: 1px 1px 1px #ffffff;
-      color: rgb(211, 170, 82);
+      text-shadow: 1px 1px 1px #272727;
+      color: #fff7e7;
     }
   }
 
@@ -168,6 +169,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    background-size: auto;
 
     .greet_text {
       position: static;
@@ -176,7 +178,8 @@
       p {
         font-size: 60px;
       }
-      h3{
+
+      h3 {
         font-size: 30px;
       }
     }

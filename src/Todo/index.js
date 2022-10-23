@@ -17,10 +17,10 @@ function Todo() {
   return (
     <div className="todo">
       <div className="container">
+        <Header />
         <div className="app-wrapper">
           <div className="scrollbar">
             <div>
-              <Header />
               <Form
                 input={input}
                 setInput={setInput}

@@ -6,7 +6,7 @@ import "../styles/style.scss"
 const Contact = () => {
   return (
     <div className="contact_container">
-      <h1 className="contact_ctitle">Contact</h1>
+      <h1 className="contact_title">Contact</h1>
       <div className="grid-container">
         <div className="grid-itemLeft">
           <ul className="content_info">

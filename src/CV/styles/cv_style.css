@@ -25,15 +25,15 @@
   font-weight: 600;
   font-style: italic;
   text-align: right;
-  text-shadow: 3px 3px 3px #ffffff;
-  color: rgb(214, 98, 3);
+  text-shadow: 2px 2px 1px #bdb3b3;
+  color: #fcf2d1;
 }
 .greet_container .greet_text h3 {
   font-size: 50px;
   font-weight: 700;
   text-align: right;
-  text-shadow: 1px 1px 1px #ffffff;
-  color: rgb(211, 170, 82);
+  text-shadow: 1px 1px 1px #272727;
+  color: #fff7e7;
 }
 .greet_container .greet_pic {
   position: absolute;
@@ -115,6 +115,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    background-size: auto;
   }
   .greet_container .greet_text {
     position: static;
@@ -232,7 +233,7 @@ h1.title:after {
 .skills_container {
   width: 100%;
   min-height: 100vh;
-  background-color: rgb(11, 43, 73);
+  background-color: #292929;
   padding-top: 5rem;
 }
 .skills_container .skills_title {

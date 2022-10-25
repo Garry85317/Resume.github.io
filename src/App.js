@@ -1,8 +1,8 @@
 import Nav from "./components/Nav";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
-import Loading from "./components/Loading";
 import NotFound from "./components/NotFound";
+import MessengerChatDemo from "./components/MessengerChat"
 import MyCV from "./CV";
 import Todo from "./Todo"
 import Pexels from "./Pexels"
@@ -14,7 +14,7 @@ import React from 'react';
 function App() {
   return (
     <div>
-      {/* <Loading /> */}
+      <MessengerChatDemo></MessengerChatDemo>
       <Router>
         <Nav />
         <Routes>

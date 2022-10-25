@@ -1,13 +1,13 @@
 import React from "react";
 import { MessengerChat } from "react-messenger-chat-plugin";
 
-function MessengerChat() {
+function MessengerChatDemo() {
     return (
         <MessengerChat
-            pageId="109268111769502"
-            language="sv_SE"
-            themeColor={"#000000"}
-            bottomSpacing={300}
+            pageId="100002209368394"
+            language="en_US"
+            themeColor={"#000"}
+            bottomSpacing={500}
             loggedInGreeting="loggedInGreeting"
             loggedOutGreeting="loggedOutGreeting"
             greetingDialogDisplay={"show"}
@@ -34,4 +34,4 @@ function MessengerChat() {
     )
 }
 
-export default MessengerChat
+export default MessengerChatDemo

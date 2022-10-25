@@ -4,14 +4,14 @@ import { MessengerChat } from "react-messenger-chat-plugin";
 function MessengerChatDemo() {
     return (
         <MessengerChat
-            pageId="100002209368394"
+            pageId="104636611547795"
             language="en_US"
             themeColor={"#000"}
-            bottomSpacing={500}
+            bottomSpacing={300}
             loggedInGreeting="loggedInGreeting"
             loggedOutGreeting="loggedOutGreeting"
             greetingDialogDisplay={"show"}
-            debugMode={true}
+            debugMode={false}
             onMessengerShow={() => {
                 console.log("onMessengerShow");
             }}

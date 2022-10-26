@@ -15,7 +15,7 @@ const Nav = () => {
       setBurgerClass("burger-bar unclicked");
       setMenuClass("menu hidden");
     }
-    setIsMenuClicked(!isMenuClicked)
+    setIsMenuClicked(!isMenuClicked);
   }
 
   return (
@@ -28,24 +28,24 @@ const Nav = () => {
         </div>
       </nav>
       <div className={menu_class}>
-        <div className="logo">
+        <div className="logo" onClick={updateMenu}>
           <Link to="/"><h1>Garry</h1></Link>
         </div>
         <ul className="nav_grid">
           <li className="list">
-            <Link to={'CV/about'}><span className="text">About Me</span></Link>
+            <Link to={'CV/about'}><span className="text" onClick={updateMenu}>About Me</span></Link>
           </li>
           <li className="list">
-            <Link to={'CV/Skills'}><span className="text">Skills</span></Link>
+            <Link to={'CV/Skills'}><span className="text" onClick={updateMenu}>Skills</span></Link>
           </li>
           <li className="list">
             <div className="nav_project">
-              <Link to={'CV/Project'}><span className="text">Project</span></Link>
-              <ul className="nav_list">
-                <li><NavLink to="/todo-list">Todo</NavLink></li>
-                <li><NavLink to="/pexels">Pexels</NavLink></li>
-                <li><NavLink to="/colour-generate">Colour</NavLink></li>
-                <li><NavLink to="/weather">weather</NavLink></li>
+              <Link to={'CV/Project'}><span className="text" onClick={updateMenu}>Project</span></Link>
+              <ul className="nav_list" >
+                <li onClick={updateMenu}><NavLink to="/todo-list">Todo</NavLink></li>
+                <li onClick={updateMenu}><NavLink to="/pexels">Pexels</NavLink></li>
+                <li onClick={updateMenu}><NavLink to="/colour-generate">Colour</NavLink></li>
+                <li onClick={updateMenu}><NavLink to="/weather">weather</NavLink></li>
               </ul>
             </div>
           </li>

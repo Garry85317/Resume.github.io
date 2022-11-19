@@ -6,7 +6,7 @@ function MessengerChatDemo() {
         <MessengerChat
             pageId="102129152707425"
             language="en_US"
-            bottomSpacing={200}
+            bottomSpacing={50}
             loggedInGreeting="loggedInGreeting"
             loggedOutGreeting="loggedOutGreeting"
             greetingDialogDisplay={"hide"}

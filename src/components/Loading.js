@@ -7,7 +7,7 @@ function Loading() {
     useEffect(() => {
         setLoading({ load: true, isVisible: true });
         setTimeout(() => { setLoading({ load: true, isVisible: false }) }, 2000);
-        setTimeout(() => { setLoading({ load: false, isVisible: false }) }, 3500);
+        setTimeout(() => { setLoading({ load: false, isVisible: false }) }, 4000);
     }, []);
 
     return ((loading.load &&

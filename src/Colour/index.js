@@ -60,7 +60,6 @@ function ColourGenerate() {
         <input
           type="text"
           className="colour-input"
-          //讓value=color.name 色卡改變顏色時才會跟著改變色號
           value={color.name}
           readOnly
         />

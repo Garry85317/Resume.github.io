@@ -1,0 +1,1 @@
+https://opendata.cwb.gov.tw/dist/opendata-swagger.html#/%E5%A4%A9%E6%96%87/get_v1_rest_datastore_A_B0062_001

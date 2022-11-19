@@ -1,13 +1,10 @@
 import React, { useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import 'animate.css';
-import WOW from 'wowjs';
 import ScrollReveal from "scrollreveal";
 
 const Project = () => {
   useEffect(() => {
-    const wow = new WOW.WOW({ scrollContainer: 'project_container', mobile: true });
-    wow.init();
     ScrollReveal().reveal('.project_grid', {
       reset: true,
       duration: 2000,

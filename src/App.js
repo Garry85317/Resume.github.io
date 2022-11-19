@@ -3,6 +3,7 @@ import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import NotFound from "./components/NotFound";
 import MessengerChatDemo from "./components/MessengerChat"
+import Loading from "./components/Loading"
 import MyCV from "./CV";
 import Todo from "./Todo"
 import Pexels from "./Pexels"
@@ -14,6 +15,7 @@ import React from 'react';
 function App() {
   return (
     <div>
+      <Loading></Loading>
       <MessengerChatDemo></MessengerChatDemo>
       <Router>
         <Nav />

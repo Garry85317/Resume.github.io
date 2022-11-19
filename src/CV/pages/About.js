@@ -1,12 +1,9 @@
 import React, { useEffect } from "react";
 import 'animate.css';
-import WOW from 'wowjs';
 import ScrollReveal from "scrollreveal";
 
 const About = () => {
   useEffect(() => {
-    const wow = new WOW.WOW({ scrollContainer: 'about_container', mobile: true });
-    wow.init();
     ScrollReveal().reveal('.about_main', {
       reset: true,
       duration: 2000,

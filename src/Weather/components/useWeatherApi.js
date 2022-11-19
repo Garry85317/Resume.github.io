@@ -1,14 +1,13 @@
 import { useState, useEffect, useCallback } from "react";
 
-//串接日落及日出時間API
+//日落、日出時間
 const fetchSunsetTime = (locationName) => {
   let sunRise;
   let sunSet;
   let nowTime;
 
-  // 取得當前時間
   const now = new Date();
-  // 將當前時間以 "yyyy-mm-dd" 的時間格式呈現
+
   const nowDate = Intl.DateTimeFormat("zh-TW", {
     year: "numeric",
     month: "2-digit",
@@ -33,16 +32,14 @@ const fetchSunsetTime = (locationName) => {
     });
 };
 
+//風速、氣溫、濕度
 const fetchCurrentWeather = (locationName) => {
-  //加上 return 直接把 fetch API 回傳的 Promise 回傳出去
   return fetch(
     `https://opendata.cwb.gov.tw/api/v1/rest/datastore/O-A0003-001?Authorization=CWB-BEFBC2DC-A35D-45D0-88E1-BD1CCC49891F&locationName=${locationName}`
   )
     .then((response) => response.json())
     .then((data) => {
-      // 定義 `locationData` 把回傳的資料中會用到的部分取出來
       const locationData = data.records.location[0];
-      // 將風速（WDSD）、氣溫（TEMP）和濕度（HUMD）的資料取出
       const weatherElements = locationData.weatherElement.reduce(
         (neededElements, item) => {
           if (["WDSD", "TEMP", "HUMD"].includes(item.elementName)) {
@@ -52,7 +49,7 @@ const fetchCurrentWeather = (locationName) => {
         },
         {}
       );
-      // 要使用到 React 組件中的資料
+
       return {
         observationTime: locationData.time.obsTime,
         locationName: locationData.locationName,
@@ -63,7 +60,7 @@ const fetchCurrentWeather = (locationName) => {
     });
 };
 
-//串接降雨機率與天氣描述API
+//降雨機率、天氣描述
 const fetchWeatherForecast = (cityName) => {
   return fetch(
     `https://opendata.cwb.gov.tw/api/v1/rest/datastore/F-C0032-001?Authorization=CWB-BEFBC2DC-A35D-45D0-88E1-BD1CCC49891F&locationName=${cityName}`
@@ -80,6 +77,7 @@ const fetchWeatherForecast = (cityName) => {
         },
         {}
       );
+
       return {
         description: weatherElements.Wx.parameterName,
         weatherCode: weatherElements.Wx.parameterValue,
@@ -105,21 +103,22 @@ const useWeatherApi = (currentLocation) => {
     isLoading: true,
   });
 
-  const fetchData = useCallback(() => {
-    const fetchingData = async () => {
-      const [currentWeather, weatherForecast, currentTime] = await Promise.all([
-        fetchCurrentWeather(locationName),
-        fetchWeatherForecast(cityName),
-        fetchSunsetTime(cityName),
-      ]);
+  const fetchingData = async () => {
+    const [currentWeather, weatherForecast, currentTime] = await Promise.all([
+      fetchCurrentWeather(locationName),
+      fetchWeatherForecast(cityName),
+      fetchSunsetTime(cityName),
+    ]);
 
-      setWeatherElement({
-        ...currentWeather,
-        ...weatherForecast,
-        currentTime: currentTime,
-        isLoading: false,
-      });
-    };
+    setWeatherElement({
+      ...currentWeather,
+      ...weatherForecast,
+      currentTime: currentTime,
+      isLoading: false,
+    });
+  };
+  
+  const fetchData = useCallback(() => {
     setWeatherElement((prevState) => ({
       ...prevState,
       isLoading: true,

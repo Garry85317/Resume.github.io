@@ -53,7 +53,6 @@ const Pexels = () => {
     search(intialURL);
   }, []);
 
-  //這裡
   useEffect(() => {
     if (currentSearch === "") {
       search(intialURL);

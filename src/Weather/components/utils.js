@@ -16,8 +16,8 @@ export const availableLocations = [
   },
   {
     cityName: "雲林縣",
-    locationName: "雲林",
-    sunriseCityName: "雲林",
+    locationName: "麥寮",
+    sunriseCityName: "雲林縣",
   },
   {
     cityName: "臺東縣",

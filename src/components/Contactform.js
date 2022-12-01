@@ -25,7 +25,7 @@ const Contactform = () => {
           </div>
           <div className="text_group">
             <label htmlFor="mail">Email</label>
-            <input type="text" id="email" name="email" />
+            <input type="email" id="email" name="email" />
           </div>
         </div>
         <div className="col">

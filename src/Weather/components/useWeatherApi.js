@@ -17,7 +17,7 @@ const fetchSunsetTime = (locationName) => {
     .replace(/\//g, "-");
 
   return fetch(
-    `https://opendata.cwb.gov.tw/api/v1/rest/datastore/A-B0062-001?Authorization=CWB-B1382EB8-4FBC-4BF2-A358-C47A78DA3834F&format=JSON&locationName=${locationName}&dataTime=${nowDate}`
+    `https://opendata.cwb.gov.tw/api/v1/rest/datastore/A-B0062-001?Authorization=CWB-B1382EB8-4FBC-4BF2-A358-C47A78DA3834&format=JSON&locationName=${locationName}&dataTime=${nowDate}`
   )
     .then((response) => response.json())
     .then((data) => {
